@@ -9,20 +9,34 @@ pageEncoding="ISO-8859-1"%>
 <link rel="stylesheet" href="Views/bootstrap.min.css">
 <script src="Components/jquery-3.6.0.min.js"></script>
 <script src="Components/payments.js"></script>
+
+<!-- add css styles -->
 <style>
 body {
-  background-color: lightblue;
+  background-color: #01002a;
+  color:white;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 h1 {
-  color:yellow;
+  color:#fed700 ;
   text-align:center;
+  font-family: Tahoma, Verdana, sans-serif;
 }
+
+
+input[type=text]:focus {
+  background-color: #ffffb3;
+  border: 3px solid #fed700;
+
+}
+
 </style>
 </head>
+
 <body> 
 <div class="container"><div class="row"><div class="col-6"> 
-<h1>Payments Management</h1>
+<h1>Payment Management</h1>
 <form id="formPayment" name="formPayment" method="post" action="payments.jsp">
  
  Payment code: 
@@ -52,6 +66,8 @@ h1 {
  <input type="hidden" id="hidPaymentIDSave" 
  name="hidPaymentIDSave" value="">
 </form>
+
+<!-- alerts -->
 <div id="alertSuccess" class="alert alert-success"></div>
 <div id="alertError" class="alert alert-danger"></div>
 <br>

@@ -110,7 +110,7 @@ public class Payment
 		 output += "<td>" + date + "</td>"; 
 		 // buttons
 		 output += "<td><input name='btnUpdate' type='button' value='Update' "
-				 + "class='btnUpdate btn btn-secondary' data-paymentid='" + payment_id + "'></td>"
+				 + "class='btnUpdate btn btn-warning' data-paymentid='" + payment_id + "'></td>"
 				 + "<td><input name='btnRemove' type='button' value='Remove' "
 				 + "class='btnRemove btn btn-danger' data-paymentid='" + payment_id + "'></td></tr>"; 
 		 
